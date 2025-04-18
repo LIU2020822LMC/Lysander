@@ -1,0 +1,191 @@
+body {
+  margin: 0%;
+  height: 100vh;
+  background-color: rgb(231, 209, 231);
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  border: 2px solid #150505;
+  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+  text-align: center;
+}
+.yinying {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+/* * {
+  border: 1px solid rgb(7, 1, 1);
+} */
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+/* 鼠标悬停图片放大 */
+.imgfangda {
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+/* 鼠标悬停图片放大 */
+.imgfangda:hover {
+  transform: scale(1.1);
+}
+
+/* 鼠标悬停文字放大 */
+.wenzifangda {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.wenzifangda2 {
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+/* 鼠标悬停文字放大 */
+.wenzifangda:hover {
+  font-size: 17px;
+}
+
+.wenzifangda2:hover {
+  font-size: 15px;
+}
+
+/* 文本显示与隐藏 */
+.text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text::before {
+  content: "";
+  float: right;
+  height: calc(100% - 1.5em);
+  background: red;
+}
+
+.btn {
+  float: right;
+  clear: both;
+  border-radius: 10px;
+  color: #2e0cf2;
+}
+
+.btn::before {
+  content: "展开";
+}
+
+.exp {
+  display: none;
+}
+
+.exp:checked + .text {
+  -webkit-line-clamp: 999;
+  line-clamp: 999;
+  /*设置一个足够大的行数就可以了*/
+  max-height: none;
+}
+
+.exp:checked + .text .btn::before {
+  content: "收起";
+}
+
+/* 渐变背景0 */
+.jianbian0 {
+  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+}
+
+/* 渐变背景1 */
+.jianbian1 {
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+
+/* 渐变背景2 */
+.jianbian2 {
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+}
+
+/* 渐变背景3 */
+.jianbian3 {
+  background-image: linear-gradient(
+    to top,
+    #65bd60 0%,
+    #5ac1a8 25%,
+    #3ec6ed 50%,
+    #b7ddb7 75%,
+    #fef381 100%
+  );
+}
+
+/* 渐变背景4     */
+.jianbian4 {
+  background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
+}
+
+.jianbian5 {
+  background-image: linear-gradient(
+    to top,
+    #fcc5e4 0%,
+    #fda34b 15%,
+    #ff7882 35%,
+    #c8699e 52%,
+    #7046aa 71%,
+    #0c1db8 87%,
+    #020f75 100%
+  );
+}
+
+/* flex布局列表式 */
+.column {
+  flex-direction: column;
+}
+
+.mg8 {
+  margin: 8px;
+}
+
+.mgr8 {
+  margin-right: 8px;
+}
+
+.mgt8 {
+  margin-top: 5px;
+}
+
+.mgb8 {
+  margin-bottom: 8px;
+}
+
+/* 导航栏样式 */
+.daohan {
+  padding: 20px 50px;
+  border-bottom: 1px solid rgb(110, 185, 24);
+  text-align: center;
+}
+
+/* 去掉链接下划线样式 */
+.quxiahuaxian {
+  text-decoration: none;
+}
+
+.wenzi {
+  text-indent: 2em;
+}
